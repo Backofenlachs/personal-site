@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:wght@400;500&display=swap');
+
+:root {
+    --font-primary: "Inter", sans-serif;
+    --font-accent: "Newsreader", serif;
+
+    --color-background: #f7f6f3;
+    --color-surface: #ffffff;
+
+    --color-text: #2f2f2f;
+    --color-text-secondary: #696969;
+    --color-text-muted: #777875;
+
+    --color-border: #d8d6d1;
+    --color-accent: #555550;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+html {
+    background: var(--color-background);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-text-secondary)
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-muted);
+    margin-top: 0;
+}
+
+.location {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin-top: 0.5rem;
+}
+
+.about,
+.path,
+.contact {
+    border-top: 1px solid var(--color-border);
+    margin-top: 3.75rem;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+
+@media (min-width: 64rem) {
+    body {
+        padding: 6rem 2rem;
+    }
+}
