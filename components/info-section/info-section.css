@@ -3,7 +3,7 @@ info-section {
     border-top: 1px solid var(--color-border);
 }
 
-info-section button {
+info-section > button {
     width: 100%;
     padding: 1.25rem 0;
 
@@ -16,6 +16,11 @@ info-section button {
     font-weight: 500;
     text-align: left;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    
     cursor: pointer;
 }
 
@@ -27,7 +32,36 @@ info-section > div {
     transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
+
+
 info-section[open] > div {
     max-height: 50rem;
     opacity: 1;
+}
+
+/* Accessibility: Hide content from screen readers when closed */
+@media (prefers-reduced-motion: reduce) {
+    info-section > div {
+        transition: none;
+    }
+}
+
+/* Icon Button */
+
+.info-section__icon {
+    flex-shrink: 0;
+    stroke: var(--color-text-secondary);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;    
+}
+
+.info-section__icon .vertical {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.5s ease;
+}
+
+info-section[open] .vertical {
+    transform: rotate(90deg);
 }
