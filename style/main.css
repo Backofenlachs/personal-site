@@ -61,11 +61,8 @@ h3 {
     margin-top: 0.5rem;
 }
 
-.about,
-.path,
-.contact {
-    border-top: 1px solid var(--color-border);
-    margin-top: 3.75rem;
+.about {
+    margin-top: 4rem;
 }
 
 a {

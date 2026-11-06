@@ -1,0 +1,28 @@
+info-section {
+    display: block;
+    border-top: 1px solid var(--color-border);
+}
+
+info-section button {
+    width: 100%;
+    padding: 1.25rem 0;
+
+    border: none;
+    background: none;
+
+    color: var(--color-text-secondary);
+    font: inherit;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+info-section > div {
+    padding-bottom: 1.5rem;
+}
+
+info-section > div[hidden] {
+    display: none;
+}

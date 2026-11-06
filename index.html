@@ -6,6 +6,8 @@
 
         <link rel="stylesheet" href="style/main.css">
 
+            <script type="module" src="./components/info-section/info-section.js"></script>
+
         <title>PPJ</title>
     </head>
     <body>
@@ -14,43 +16,49 @@
         <h3 class="title">Softwareentwickler</h3>
 
         
-        <div class="about">
-            <h2>Über mich</h2>
-            <p>
-                Ich bin 21 Jahre alt und arbeite als Softwarerentwickler bei der Staudengärtnerei Gaissmayer GmbH & Co. KG.
-                Dort entwickle ich intere Softwarelösungen für betriebliche Prozesse. Zu meinen Aufgaben gehört die modernisierung und Weiterentwicklung von REST-APIs,
-                Datenbankanbindungen und Frontends sowie die Integration in bestehende Systeme.
-            </p>
+        <info-section open class="about">
+            <button>Über mich</button>
+            <div>
+                <p>
+                    Ich bin 21 Jahre alt und arbeite als Softwarerentwickler bei der Staudengärtnerei Gaissmayer GmbH & Co. KG.
+                    Dort entwickle ich intere Softwarelösungen für betriebliche Prozesse. Zu meinen Aufgaben gehört die modernisierung und Weiterentwicklung von REST-APIs,
+                    Datenbankanbindungen und Frontends sowie die Integration in bestehende Systeme.
+                </p>
 
-            <p>
-                Was mich an der Softwareentwicklung besonders begeistert, ist nicht nur das Programmieren selbst, sondern die Möglichkeit, aus einer Problemstellung ein funktionierende Anwendung entstehen zu lassen 
-                und den gesammten Entwicklungsprozess zu begleiten – von der ersten Idee über die Konzeption und Architektur bis hin zur implementierung, dem produtiven Einsatz und der anschließenden Weiterentwicklung.
-            </p>
-        </div>
+                <p>
+                    Was mich an der Softwareentwicklung besonders begeistert, ist nicht nur das Programmieren selbst, sondern die Möglichkeit, aus einer Problemstellung ein funktionierende Anwendung entstehen zu lassen 
+                    und den gesammten Entwicklungsprozess zu begleiten – von der ersten Idee über die Konzeption und Architektur bis hin zur implementierung, dem produtiven Einsatz und der anschließenden Weiterentwicklung.
+                </p>
+            </div>
+        </info-section>
 
-        <div class="path">
-            <h2>Mein weiterer Weg</h2>
-            <p>
-                In den kommenden Jahren möchte ich meine bisher praktischen Erfahrung durch eine fundierte Ausbildung zum Fachinformatiker für Anwendungsentwicklung vertiefen.
-                Diese möchte ich 2027 beginnen und nach möglichkeit verkürzen.
-            </p>
-            <p>
-                Anschließend plane ich ein berufsbegleitendes Studium im Bereich Informatik oder Wirtschaftsinformatik, um meine theoretischen Grundlagen weiter auszubauen und ein tieferes Verständnis für das Zusammenspiel technischer, 
-                wissenschaftlicher und wirtschaftlicher Zusammenhänge zu entwickeln.
-            </p>
-        </div>
+        <info-section class="path">
+            <button>Mein weiterer Weg</button>
+            <div>
+                <p>
+                    In den kommenden Jahren möchte ich meine bisher praktischen Erfahrung durch eine fundierte Ausbildung zum Fachinformatiker für Anwendungsentwicklung vertiefen.
+                    Diese möchte ich 2027 beginnen und nach möglichkeit verkürzen.
+                </p>
+                <p>
+                    Anschließend plane ich ein berufsbegleitendes Studium im Bereich Informatik oder Wirtschaftsinformatik, um meine theoretischen Grundlagen weiter auszubauen und ein tieferes Verständnis für das Zusammenspiel technischer, 
+                    wissenschaftlicher und wirtschaftlicher Zusammenhänge zu entwickeln.
+                </p>
+            </div>
+        </info-section>
 
-        <div class="contact">
-            <h2>Kontakt</h2>
+        <info-section class="contact">
+            <button>Kontakt</button>
+                <div>
 
-            <div class="location">Neu-Ulm, Deutschland</div>
+                <div class="location">Neu-Ulm, Deutschland</div>
 
-            <p>
-                <strong>Email:</strong> <a href="mailto:perseus.palma-jacobs@outlook.com">perseus.palma-jacobs@outlook.com</a>
-            </p>
-            <p>
-                <strong>Github:</strong> <a href="https://github.com/BackofenLachs" target="_blank">https://github.com/BackofenLachs</a>
-            </p>
-        </div>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:perseus.palma-jacobs@outlook.com">perseus.palma-jacobs@outlook.com</a>
+                </p>
+                <p>
+                    <strong>Github:</strong> <a href="https://github.com/BackofenLachs" target="_blank">https://github.com/BackofenLachs</a>
+                </p>
+            </div>
+        </info-section>
     </body>
 </html>
