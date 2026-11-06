@@ -22,7 +22,7 @@
 body {
     max-width: 720px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
 
     background: var(--color-background);
     color: var(--color-text);

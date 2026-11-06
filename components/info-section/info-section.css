@@ -20,9 +20,14 @@ info-section button {
 }
 
 info-section > div {
-    padding-bottom: 1.5rem;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
-info-section > div[hidden] {
-    display: none;
+info-section[open] > div {
+    max-height: 50rem;
+    opacity: 1;
 }

@@ -35,8 +35,12 @@ class InfoSection extends HTMLElement {
     }
 
     setOpen(open) {
-        this.content.hidden = !open;
+        if(!this.button || !this.content) {
+            throw new Error("InfoSection: button and content not properly initialized.");
+        }
+        
         this.button.setAttribute("aria-expanded", String(open));
+        this.content.inert = !open;
         this.toggleAttribute("open", open);
     }
 }
