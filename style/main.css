@@ -19,13 +19,14 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-
+html {
     background: var(--color-background);
     color: var(--color-text);
+}
+
+body {
+    display: flex;
+
 
     font-family: var(--font-primary);
     font-size: 0.9rem;
@@ -35,14 +36,30 @@ body {
     z-index: 1;
 }
 
-html {
-    background: var(--color-background);
+main {
+    margin: 0 auto;
+    padding: 1rem 2rem;
+
+    display: flex;
+    flex-direction: column;
 }
+
+.sections {
+    max-width: 45rem;
+} 
+
 
 h1 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 0;
+}
+
+h1.title {
+    min-width: 14rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 h2 {
@@ -75,6 +92,15 @@ a {
 
 @media (min-width: 64rem) {
     body {
-        padding: 6rem 2rem;
+        padding: 2rem 2rem;
+    }
+}
+
+@media (min-width: 80rem) {
+    
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
     }
 }
