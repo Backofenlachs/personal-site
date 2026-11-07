@@ -1,6 +1,7 @@
 info-section {
     display: block;
     border-top: 1px solid var(--color-border);
+    background: rgba(247, 246, 243, 0);
 }
 
 info-section > button {
